@@ -1,37 +1,26 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import HomeCard from "./components/HomeCard";
+import Card from "./components/Card";
+import JobListing from "./components/JobListing";
+import ViewAllJobs from "./components/ViewAllJobs";
 
-const App = () => {
-  const name = 'mahmood'
-  const greeting = `Hello ${name}!`
-
-  const x= 40;
-  const y= 50;
-  const sum = x + y;
-
-  const  isLoggedIn = false;
-
-  const  names = ['mahmood', 'ali', 'ahmed', 'sara', 'nashit']
+function App() {
   return (
     <div>
-      <h1 className="text-5xl font-bold underline ">
-       {greeting}
-      </h1>
-      <h2 className="text-2xl">
-       The sum of {x} and {y} is  =  {sum}</h2>
-       <p style={{ color:'red' , fontFamily:"Roboto"}} >This is practice</p>
-       <ul>
-        {
-          names.map((name, index) => (
-            <li key={index} className="text-xl">
-              {index + 1} - {name}
-            </li>
-          ))
-        }
-       </ul>
-       {isLoggedIn ? (
-        <h2 className="text-2xl">Welcome back, {name}!</h2>): <h2> Please Log in</h2>}
+      {" "}
+      <Navbar />
+      <Hero
+        title={"Become a React Dev"}
+        subTitle={"Find the React job that fits your skills and needs"}
+      />
+      <HomeCard />
+      <Card />
+      <JobListing />
+      <ViewAllJobs />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
