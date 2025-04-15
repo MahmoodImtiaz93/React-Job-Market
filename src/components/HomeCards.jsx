@@ -19,14 +19,14 @@ const HomeCard = () => {
                 Browse Jobs
               </a>
             </Card>
-            <Card cardColor="bg-indigo-100">
+            <Card cardColor="bg-slate-100">
               <h2 className="text-2xl font-bold">For Employers</h2>
               <p className="mt-2 mb-4">
                 List your job to find the perfect developer for the role
               </p>
               <a
                 href="/add-job"
-                className="inline-block bg-indigo-500 text-white rounded-lg px-4 py-2 hover:bg-indigo-600"
+                className="inline-block bg-slate-700 text-white rounded-lg px-4 py-2 hover:bg-slate-600"
               >
                 Add Job
               </a>
